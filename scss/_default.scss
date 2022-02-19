@@ -1,0 +1,85 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+}
+
+body {
+   height: 100vh;
+   min-width: 320px;
+
+   font-family: $font-Roboto;
+   background-color: $color-bg;
+   color: $color-text;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+button {
+   padding: 0;
+   cursor: pointer;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+ul,
+ol {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+   margin: 0;
+}
+
+iframe {
+   border: none;
+}
+
+/*
+Доступно скрываю элементы
+*/
+
+.visually-hidden {
+   position: absolute !important;
+   clip: rect(1px 1px 1px 1px);
+   /* IE6, IE7 */
+   clip: rect(1px, 1px, 1px, 1px);
+   padding: 0 !important;
+   border: 0 !important;
+   height: 1px !important;
+   width: 1px !important;
+   overflow: hidden;
+}
+
+.container {
+   max-width: 1650px;
+   margin: 0 auto;
+   padding: 0 30px;
+}
+
+@media (max-width: 468px) {
+   .container {
+      padding: 0 15px;
+   }
+}
