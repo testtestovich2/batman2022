@@ -1,0 +1,32 @@
+.footer {
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   font-size: 9px;
+   line-height: 11px;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+
+   &__copyright {
+      color: $color-gray;
+   }
+
+   &__list {
+      display: flex;
+      gap: 21px;
+      margin-bottom: 6px;
+   }
+
+   &__link {
+      opacity: 1;
+      transition: all 0.3s ease;
+
+      &:hover {
+         opacity: 0.7;
+      }
+   }
+}

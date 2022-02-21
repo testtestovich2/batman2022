@@ -35,6 +35,11 @@
    &__link {
       display: block;
       padding: 7px 14px;
+      transition: all 0.5s ease;
+
+      &:hover {
+         background-color: $color-red;
+      }
    }
 
    &__link_active {
@@ -53,14 +58,29 @@
 
       &_fb {
          background-image: url("../img/social/fb.svg");
+         transition: all 0.3s ease;
+
+         &:hover {
+            background-image: url("../img/social/fb-h.svg");
+         }
       }
 
       &_twitter {
          background-image: url("../img/social/twitter.svg");
+         transition: all 0.3s ease;
+
+         &:hover {
+            background-image: url("../img/social/twitter-h.svg");
+         }
       }
 
       &_instagram {
          background-image: url("../img/social/instagram.svg");
+         transition: all 0.3s ease;
+
+         &:hover {
+            background-image: url("../img/social/instagram-h.svg");
+         }
       }
    }
 }
@@ -98,6 +118,10 @@
       border-radius: 50%;
       background-color: $color-red;
       box-shadow: 0px 1px 1px rgba(69, 2, 2, 0.3);
+
+      transition: left 0.3s ease-in-out, right 0.3s ease-in-out;
+      background-position: center center;
+      background-repeat: no-repeat;
    }
 
    &__label::after {
@@ -111,6 +135,7 @@
       border-radius: 50%;
       background-color: $color-red;
       box-shadow: 0px 1px 1px rgba(69, 2, 2, 0.3);
+
       transition: left 0.3s ease-in-out, right 0.3s ease-in-out;
       background-position: center center;
       background-repeat: no-repeat;
