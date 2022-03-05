@@ -1,4 +1,8 @@
 .footer {
+   height: 50px;
+   position: relative;
+   z-index: 500;
+
    padding-top: 10px;
    padding-bottom: 10px;
 
@@ -41,6 +45,7 @@
 
 @media (max-width: 580px) {
    .footer {
+      height: 50px;
       font-size: 6px;
       line-height: 7px;
    }
