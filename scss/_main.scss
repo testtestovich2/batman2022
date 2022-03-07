@@ -13,6 +13,8 @@
 
    &_slider {
       height: calc(100% - 50px - 50px);
+      overflow: hidden;
+      padding-bottom: 10px;
    }
 }
 
